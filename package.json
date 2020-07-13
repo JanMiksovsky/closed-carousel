@@ -2,6 +2,6 @@
   "name": "simple-example",
   "version": "1.0.0",
   "dependencies": {
-    "elix": "11.0.1"
+    "elix": "14.0.0"
   }
 }
