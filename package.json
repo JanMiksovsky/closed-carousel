@@ -1,7 +1,12 @@
 {
   "name": "simple-example",
   "version": "1.0.0",
-  "dependencies": {
-    "elix": "14.0.0"
+  "devDependencies": {
+    "elix": "14.0.0",
+    "rollup": "2.21.0"
+  },
+  "scripts": {
+    "build": "rollup --config",
+    "watch": "rollup --config --watch"
   }
 }
