@@ -8,31 +8,31 @@ import PlainCenteredStripOpacity from "../node_modules/elix/src/plain/PlainCente
 import PlainPageDot from "../node_modules/elix/src/plain/PlainPageDot.js";
 import PlainSlidingStage from "../node_modules/elix/src/plain/PlainSlidingStage.js";
 
-export class TestArrowDirectionButton extends PlainArrowDirectionButton {
+class TestArrowDirectionButton extends PlainArrowDirectionButton {
   get [shadowRootMode]() {
     return "closed";
   }
 }
 
-export class TestPageDot extends PlainPageDot {
+class TestPageDot extends PlainPageDot {
   get [shadowRootMode]() {
     return "closed";
   }
 }
 
-export class TestCenteredStripOpacity extends PlainCenteredStripOpacity {
+class TestCenteredStripOpacity extends PlainCenteredStripOpacity {
   get [shadowRootMode]() {
     return "closed";
   }
 }
 
-export class TestSlidingStage extends PlainSlidingStage {
+class TestSlidingStage extends PlainSlidingStage {
   get [shadowRootMode]() {
     return "closed";
   }
 }
 
-export class TestCarousel extends PlainCarousel {
+class TestCarousel extends PlainCarousel {
   get [defaultState]() {
     return Object.assign(super[defaultState], {
       arrowButtonPartType: TestArrowDirectionButton,

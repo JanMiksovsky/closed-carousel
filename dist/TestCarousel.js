@@ -9463,6 +9463,4 @@ class TestCarousel extends PlainCarousel {
   }
 }
 customElements.define("test-carousel", TestCarousel);
-
-export { TestArrowDirectionButton, TestCarousel, TestCenteredStripOpacity, TestPageDot, TestSlidingStage };
 //# sourceMappingURL=TestCarousel.js.map
