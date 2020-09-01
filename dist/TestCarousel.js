@@ -9425,12 +9425,24 @@ class PlainCarousel extends DarkModeMixin(
 class PlainSlidingStage extends SlidingStage {}
 
 class TestArrowDirectionButton extends PlainArrowDirectionButton {
+  get [defaultState$1]() {
+    return Object.assign(super[defaultState$1], {
+      detectDarkMode: "off",
+    });
+  }
+
   get [shadowRootMode$1]() {
     return "closed";
   }
 }
 
 class TestPageDot extends PlainPageDot {
+  get [defaultState$1]() {
+    return Object.assign(super[defaultState$1], {
+      detectDarkMode: "off",
+    });
+  }
+
   get [shadowRootMode$1]() {
     return "closed";
   }
@@ -9452,6 +9464,7 @@ class TestCarousel extends PlainCarousel {
   get [defaultState$1]() {
     return Object.assign(super[defaultState$1], {
       arrowButtonPartType: TestArrowDirectionButton,
+      detectDarkMode: "off",
       proxyListPartType: TestCenteredStripOpacity,
       proxyPartType: TestPageDot,
       stagePartType: TestSlidingStage,

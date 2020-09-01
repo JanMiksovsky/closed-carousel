@@ -9,12 +9,24 @@ import PlainPageDot from "../node_modules/elix/src/plain/PlainPageDot.js";
 import PlainSlidingStage from "../node_modules/elix/src/plain/PlainSlidingStage.js";
 
 class TestArrowDirectionButton extends PlainArrowDirectionButton {
+  get [defaultState]() {
+    return Object.assign(super[defaultState], {
+      detectDarkMode: "off",
+    });
+  }
+
   get [shadowRootMode]() {
     return "closed";
   }
 }
 
 class TestPageDot extends PlainPageDot {
+  get [defaultState]() {
+    return Object.assign(super[defaultState], {
+      detectDarkMode: "off",
+    });
+  }
+
   get [shadowRootMode]() {
     return "closed";
   }
@@ -36,6 +48,7 @@ class TestCarousel extends PlainCarousel {
   get [defaultState]() {
     return Object.assign(super[defaultState], {
       arrowButtonPartType: TestArrowDirectionButton,
+      detectDarkMode: "off",
       proxyListPartType: TestCenteredStripOpacity,
       proxyPartType: TestPageDot,
       stagePartType: TestSlidingStage,
